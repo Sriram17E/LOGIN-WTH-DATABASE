@@ -1,0 +1,16 @@
+ import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+      import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-auth.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+     
+     const btn = document.querySelector(".login_btn");
+     const message = document.querySelector(".messege_box");
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyDAPu-3U5t1ZBFygh9t7KJwikooQH2bnNs",
+        authDomain: "login-cb4d3.firebaseapp.com",
+        projectId: "login-cb4d3",
+        storageBucket: "login-cb4d3.firebasestorage.app",
+        messagingSenderId: "704631133470",
+        appId: "1:704631133470:web:b3ed271c226c0da93b650f"
+      };
