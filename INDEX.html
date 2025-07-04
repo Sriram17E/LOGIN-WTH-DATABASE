@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <!-- Background Video -->
+<video autoplay muted loop id="bg-video">
+  <source src="267772_tiny.mp4" type="video/mp4">
+ 
+</video>
+
     <form class="login_form">
         <h1 class="login_title">Login</h1>
+       <button onclick=""></button>
 
         <div class="input_box">
             <i class="fa-solid fa-user"></i>
@@ -70,6 +77,10 @@ btn.addEventListener("click", function(event) {
             const user = userCredential.user;
             message.textContent = "Account successfully created!";
             message.classList.add("created");
+
+            setTimeout(() => {
+                window.location.href = "index.html"; // change to your target page
+            }, 100);
         })
         .catch((error) => {
             const errorCode = error.code;
